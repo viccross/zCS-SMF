@@ -6,7 +6,7 @@ The year is 2021.  SMF 119 provides a treasure trove of data ripe for analysis. 
 
 However, in a world where the popular choice can so often lead to a path of commodity dreariness, the brave few still choose to worship their SMF data with hand-woven tools.  Parsing the fields, assigning values to variables, calculating averages and peaks, and tabulating by protocol... these are the true seekers of wisdom, for they understand the true value and meaning of the data within.
 
-They are... The Net Whisperers!
+They are... The Net Whisperers.  Their weapon: *zCS-SMF*.
 
 ## The Purpose
 This tool is a simple program to read TCP/IP connection records from SMF and perform simple analysis.  
