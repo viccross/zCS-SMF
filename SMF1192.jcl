@@ -1,4 +1,4 @@
-//IBM010S   JOB (SMFD),'VIC CROSS SYS',
+//JOBNAME   JOB (SMFD),'PROGRAMMER NAME',
 //             NOTIFY=&SYSUID,
 //             CLASS=A,MSGCLASS=H,MSGLEVEL=(1,1)
 //*----------------------------------------------------------------*
@@ -18,9 +18,7 @@
 /*
 //*----------------------------------------------------------------*
 //* COPY VBS TO VB, DROP HEADER/TRAILER RECORDS, SORT ON DATE/TIME *
-//* Note: change the CONSMF DSN=hlq.conrec to the name of          *
-//* the dataset you'll use in the last step.                       *
-//* Change the SPACE allocation values.                            *
+//* Change the SPACE allocation values if needed                   *
 //*----------------------------------------------------------------*
 //CONSEL   EXEC PGM=ICETOOL
 //DFSMSG   DD SYSOUT=*
@@ -42,11 +40,9 @@
 //* FORMAT TCP/IP Connection termination TYPE 119 subtype 2 records*
 //* Note: change the SYSEXEC DSN=your.rexx.library to the name     *
 //* of the dataset where you have placed the TCPCONN REXX EXEC.    *
-//* Also, change the SMFREC  DSN=hlq.conrec to the name of         *
-//* the dataset you have created in the previous step.             *
 //*----------------------------------------------------------------*
 //CONREXX  EXEC PGM=IKJEFT01,REGION=0M,DYNAMNBR=50
-//SYSEXEC  DD DSN=IBM010.MVS.JCL,DISP=SHR
+//SYSEXEC  DD DSN=your.rexx.library,DISP=SHR
 //SMFREC   DD DSN=&&SMFDAT,DISP=(OLD,DELETE)
 //SYSTSPRT DD SYSOUT=*
 //SYSTSIN  DD *
