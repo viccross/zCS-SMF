@@ -66,5 +66,5 @@ This tool is not officially supported in any capacity.  Suggestions for enhancem
 * Generation of HTML output (including graphs, using a graphic generation tool).  HTML output could be served by a z/OS web server, but generation of graphics and more complex presentation is something that could best be performed in a zCX container.
 * Coverage of UDP data in addition to TCP
 
-Again I must stress -- while this is a functional tool, it's main purpose is as a tool to convey the complexity of SMF data analysis.  While "end-user" SMF parsing is possible, it is complex and error-prone and very difficuly to expand or enhance.
+Again I must stress -- while this is a functional tool, it's main purpose is as a tool to convey the complexity of SMF data analysis.  While "end-user" SMF parsing is possible, it is complex and error-prone and very difficult to expand or enhance.
 
